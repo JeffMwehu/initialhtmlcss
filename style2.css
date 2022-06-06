@@ -1,0 +1,68 @@
+.calendar-month {
+    position: relative;
+    border: 1px solid ;
+}
+.calendar-month-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+}
+.calendar-month-header-selected-month {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.calendar-month-header-selectors {
+    font-size: 1.2em;
+    font-size: heavy;
+}
+.day-of-the-week {
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    list-style-type: none;
+}
+.days-grid-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0;
+}
+.days-grid {
+    height: 100%;
+    position: relative;
+    border-top: 1px solid;
+    padding: 0;
+}
+.calendar-day {
+    min-height: 100px;
+    position: relative;
+    font-size: 16px;
+    padding: 5px;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    margin-left: 0%;
+    list-style-type: none;
+}
+.calenday-day span {
+    display: flex;
+    position: absolute;
+    right: 2px;
+    justify-items: center;
+    text-align: center;
+}
+.button {
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+.button :hover {
+    cursor: pointer;
+}
+#previous-month-selector {
+    padding: 5px;
+    margin: 0%;
+    cursor: pointer;
+}
+/.calendar-day ol :last-child {
+    border-bottom: 0;
+}
